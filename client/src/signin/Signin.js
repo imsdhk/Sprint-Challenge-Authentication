@@ -29,13 +29,7 @@ class Signin extends React.Component {
       localStorage.removeItem('token');
     });
   }
-  handleSelect = (e) => {
-    e.preventDefault();
-    console.log('Fired in signin, the handleSelect', this.props)
-    this.props.handleSelect();
-    // this.props.history.push('/');
 
-  }
   render() {
     return (<div>
       <h3>Please Sign In</h3>
@@ -50,7 +44,6 @@ class Signin extends React.Component {
           <input name="password" value={this.state.password} onChange={this.inputChangeHandler} type="password"/>
         </div>
         <div>
-
           <button>sign in</button>
         </div>
 
